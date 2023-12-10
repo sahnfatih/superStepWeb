@@ -1,5 +1,5 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <FavoriModellerSlider/>
   </div>
 </template>
