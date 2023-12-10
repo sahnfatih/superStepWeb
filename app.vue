@@ -3,5 +3,7 @@
     <FavoriModellerSlider/>
     <GiyimKoleksiyonuSlider/>
     <Koleksiyonlar/>
+    <NavBar/>
+   <SezonunTrendleri/>
   </div>
 </template>
