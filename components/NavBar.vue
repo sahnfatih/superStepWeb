@@ -29,7 +29,7 @@
                       <router-link to="/erkek" class="menu-link">Erkek</router-link>
                     </li>
                     <li class="menu-list-item">
-                      <router-link to="/kadin" class="menu-link">Kadın</router-link>
+                      <router-link to="/kadın" class="menu-link">Kadın</router-link>
                     </li>
                     <li class="menu-list-item">
                       <router-link to="/cocuk" class="menu-link">Çocuk</router-link>
