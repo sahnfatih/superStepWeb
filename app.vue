@@ -33,3 +33,4 @@ export default {
   components: { Navbar, SezonunTrendleriVue, ContainerVue, KoleksiyonlarVue, Container2Vue, FooterVue, Container3Vue, Footer2Vue, FavoriModellerSliderVue, Container4Vue, GiyimKoleksiyonuSliderVue, Login }
 }
 </script>
+
