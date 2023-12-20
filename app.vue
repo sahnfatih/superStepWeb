@@ -11,7 +11,7 @@
       <GiyimKoleksiyonuSliderVue />
       <FooterVue />
       <Footer2Vue />
-      <Login/>
+      
              
       
   </div>
@@ -28,10 +28,9 @@ import Footer2Vue from '../components/Footer2.vue'
 import FavoriModellerSliderVue from '../components/FavoriModellerSlider.vue';
 import Container4Vue from '../components/Container4.vue'
 import GiyimKoleksiyonuSliderVue from '../components/GiyimKoleksiyonuSlider.vue';
-import Login from './components/Login.vue';
 export default {
   name: "IndexPage",
-  components: { Navbar, SezonunTrendleriVue, ContainerVue, KoleksiyonlarVue, Container2Vue, FooterVue, Container3Vue, Footer2Vue, FavoriModellerSliderVue, Container4Vue, GiyimKoleksiyonuSliderVue, Login }
+  components: { Navbar, SezonunTrendleriVue, ContainerVue, KoleksiyonlarVue, Container2Vue, FooterVue, Container3Vue, Footer2Vue, FavoriModellerSliderVue, Container4Vue, GiyimKoleksiyonuSliderVue}
 }
 </script>
 

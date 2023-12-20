@@ -101,7 +101,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600);
 
 * {
     margin: 0;
@@ -190,6 +190,7 @@ h1, h2, h4, h5, h6, p {
     text-align: center;
     float: left;
 }
+
 
 .menu-list .menu-list-item .menu-link {
     display: flex;

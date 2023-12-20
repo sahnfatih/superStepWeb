@@ -12,10 +12,11 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "nuxt": "^3.8.2",
-    "vue": "^3.2.36",
+    "vue": "^3.3.13",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "vite": "^5.0.10",
     "vue-slick-carousel": "^1.0.6"
   }
 }

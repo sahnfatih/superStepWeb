@@ -1,59 +1,63 @@
 <template>
-    <div>
-      <h2 class="favori-modeller-baslik">Öne Çıkanlar</h2>
-      <vue-horizontal-list :items="items" :options="options">
-        <template v-slot:default="{ item }">
-          <div>
-            <div class="image-container">
-              <img :src="item.image" />
-            </div>
-            <h5>{{ item.subtitle }}</h5>
-            <a>{{ item.title }}</a>
-            <p>{{ item.price }}</p>
+  <div>
+    <h2 class="favori-modeller-baslik">Öne Çıkanlar</h2>
+    <VueSlickCarousel :options="slickOptions">
+      <div v-for="item in items" :key="item.title">
+        <div>
+          <div class="image-container">
+            <img :src="item.image" />
           </div>
-        </template>
-      </vue-horizontal-list>
-    </div>
-  </template>
-  
-  <script>
-  import VueHorizontalList from 'vue-horizontal-list';
-  import { ref } from 'vue';
-  
-  export default {
-    name: 'ImageThree',
-    components: {
-      VueHorizontalList,
-    },
-    setup() {
-      const items = ref([
-        {
-          subtitle: 'Skechers',
-          title: 'Skechers Summits Erkek Siyah Spor Ayakkabı',
-          price: '1.449 TL',
-          image: 'https://cdn-ss.akinon.net/products/2021/11/17/356491/b65c7973-1020-4268-8160-05bfba31a2a3_size330x495.jpg',
-        },
-        {
-          subtitle: 'adidas',
-          title: 'adidas Ozweego Celox Unisex Gri Spor Ayakkabı',
-          price: '1.449 TL',
-          image: 'https://cdn-ss.akinon.net/products/2022/08/19/435667/095742a4-7954-4011-8f75-480f399dbb41_size330x495.jpg',
-        },
-       
-      ]);
-  
-      const options = ref({
-         visibleItems: 3, 
-         scrollSpeed: 500
-      });
-  
-      return {
-        items,
-        options,
-      };
-    },
-  };
-  </script>
+          <h5>{{ item.subtitle }}</h5>
+          <a>{{ item.title }}</a>
+          <p>{{ item.price }}</p>
+        </div>
+      </div>
+    </VueSlickCarousel>
+  </div>
+</template>
+
+<script>
+import VueSlickCarousel from 'vue-slick-carousel';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css';
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+import { ref } from 'vue';
+
+export default {
+  name: 'ImageThree',
+  components: {
+    VueSlickCarousel,
+  },
+  setup() {
+    const items = ref([
+      {
+        subtitle: 'Skechers',
+        title: 'Skechers Summits Erkek Siyah Spor Ayakkabı',
+        price: '1.449 TL',
+        image: 'https://cdn-ss.akinon.net/products/2021/11/17/356491/b65c7973-1020-4268-8160-05bfba31a2a3_size330x495.jpg',
+      },
+      {
+        subtitle: 'adidas',
+        title: 'adidas Ozweego Celox Unisex Gri Spor Ayakkabı',
+        price: '1.449 TL',
+        image: 'https://cdn-ss.akinon.net/products/2022/08/19/435667/095742a4-7954-4011-8f75-480f399dbb41_size330x495.jpg',
+      },
+    ]);
+
+    const slickOptions = ref({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      speed: 500,
+    });
+
+    return {
+      items,
+      slickOptions,
+    };
+  },
+};
+</script>
+
   
   <style scoped>
   .favori-modeller-baslik {
