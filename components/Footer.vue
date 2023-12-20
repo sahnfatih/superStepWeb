@@ -28,3 +28,58 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+
+.footer-badges {
+    margin: 54px 0;
+    width: 1160px;
+    height: 169px;
+}
+
+.badges {
+    margin-left: -5px;
+    margin-right: -55px;
+    display: flex;
+    width: 1170px;
+    height: 169px;
+    padding-left: 590px;
+    padding-bottom: 220px;
+}
+
+.passing {
+    width: 25%;
+    width: 292px;
+    height: 169px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.badges-img {
+    width: 50px;
+    margin: 6px auto 12px;
+    display: block;
+}
+
+.badges-title {
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 150px;
+    min-height: 46px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badges-text {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 8px 0;
+}
+
+</style>
