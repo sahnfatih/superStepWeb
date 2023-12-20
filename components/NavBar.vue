@@ -7,36 +7,36 @@
       <div class="header-row">
         <div class="header-wrapper">
           <div class="header-left">
-            <router-link to="/" class="logo">
+            <a href="/" class="logo">
               <img
                 loading="lazy"
                 src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/logo-black.svg"
                 alt="Super Step"
                 width="200"
               />
-            </router-link>
+            </a>
           </div>
           <div class="header-center-menu">
             <div class="header-center">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
-                    <router-link to="/markalar" class="menu-link">Markalar</router-link>
+                    <a href="/markalar" class="menu-link">Markalar</a>
                   </li>
                   <li class="menu-list-item">
-                    <router-link to="/erkek" class="menu-link">Erkek</router-link>
+                    <a href="/erkek" class="menu-link">Erkek</a>
                   </li>
                   <li class="menu-list-item">
-                    <router-link to="/kadın" class="menu-link">Kadın</router-link>
+                    <a href="/kadın" class="menu-link">Kadın</a>
                   </li>
                   <li class="menu-list-item">
-                    <router-link to="/cocuk" class="menu-link">Çocuk</router-link>
+                    <a href="/cocuk" class="menu-link">Çocuk</a>
                   </li>
                   <li class="menu-list-item">
-                    <router-link to="/giyim" class="menu-link">Giyim</router-link>
+                    <a href="/giyim" class="menu-link">Giyim</a>
                   </li>
                   <li class="menu-list-item">
-                    <router-link to="/indirim" class="menu-link">İndirim</router-link>
+                    <a href="/indirim" class="menu-link">İndirim</a>
                   </li>
                 </ul>
               </nav>
@@ -45,46 +45,46 @@
           <div class="header-right">
             <ul class="menu-list">
               <li class="menu-list-item">
-                <router-link to="/search" class="menu-link">
+                <a href="/search" class="menu-link">
                   <img
                     loading="lazy"
                     class="icon-favorite-svg"
                     src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/search.svg"
                     height="24px"
                   />
-                </router-link>
+                </a>
               </li>
-              <router-link to="/login">
+              <a href="/login">
                 <li class="menu-list-item">
-                  <router-link to="/login" class="menu-link">
+                  <a href="/login" class="menu-link">
                     <img
                       loading="lazy"
                       class="icon-favorite-svg"
                       src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/user.svg"
                       height="24px"
                     />
-                  </router-link>
+                  </a>
                 </li>
-              </router-link>
+              </a>
               <li class="menu-list-item">
-                <router-link to="/favorites" class="menu-link">
+                <a href="/favorites" class="menu-link">
                   <img
                     loading="lazy"
                     class="icon-favorite-svg"
                     src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/heart.svg"
                     height="24px"
                   />
-                </router-link>
+                </a>
               </li>
               <li class="menu-list-item">
-                <router-link to="/cart" class="menu-link">
+                <a href="/cart" class="menu-link">
                   <img
                     loading="lazy"
                     class="icon-favorite-svg"
                     src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/bag.svg"
                     height="24px"
                   />
-                </router-link>
+                </a>
               </li>
             </ul>
           </div>
@@ -99,6 +99,7 @@ export default {
   name: "Header",
 };
 </script>
+
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,600);
