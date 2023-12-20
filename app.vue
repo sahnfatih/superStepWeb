@@ -12,6 +12,7 @@
       <FooterVue />
       <Footer2Vue />
       <Login/>
+             
       
   </div>
 </template> 
