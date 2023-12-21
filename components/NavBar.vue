@@ -1,8 +1,8 @@
 <template>
   <div>
     <header>
-      <div class="global-notification">
-        <p>Siparişin 2-4 iş günü içerisinde kargoya verilecektir.</p>
+      <div class="global-notification"  v-bind:class="{ 'slide-in': slideIn }">
+        <p>{{ notificationText }}</p>
       </div>
       <div class="header-row">
         <div class="header-wrapper">
@@ -10,7 +10,7 @@
             <a href="/" class="logo">
               <img
                 loading="lazy"
-                src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/logo-black.svg"
+                src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/10/31/137ac835-153e-4420-93a0-23b04851c260.svg"
                 alt="Super Step"
                 width="200"
               />
@@ -21,22 +21,22 @@
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
-                    <a href="/markalar" class="menu-link">Markalar</a>
+                    <a href="https://www.superstep.com.tr/markalar-landing" class="menu-link">Markalar</a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="/erkek" class="menu-link">Erkek</a>
+                    <a href="https://www.superstep.com.tr/tum-erkek/" class="menu-link">Erkek</a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="/kadın" class="menu-link">Kadın</a>
+                    <a href="https://www.superstep.com.tr/tum-kadin/" class="menu-link">Kadın</a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="/cocuk" class="menu-link">Çocuk</a>
+                    <a href="https://www.superstep.com.tr/tum-cocuk-urunleri/" class="menu-link">Çocuk</a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="/giyim" class="menu-link">Giyim</a>
+                    <a href="https://www.superstep.com.tr/tum-giyim-urunleri/" class="menu-link">Giyim</a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="/indirim" class="menu-link">İndirim</a>
+                    <a href="/indirim" class="menu-link" >İndirim</a>
                   </li>
                 </ul>
               </nav>
@@ -49,8 +49,8 @@
                   <img
                     loading="lazy"
                     class="icon-favorite-svg"
-                    src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/search.svg"
-                    height="24px"
+                    src="https://688268d7.cdn.akinoncloud.com/static_omnishop/super715/assets/img/header-icons/search.svg"                   
+                     height="24px"
                   />
                 </a>
               </li>
@@ -60,9 +60,8 @@
                     <img
                       loading="lazy"
                       class="icon-favorite-svg"
-                      src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/user.svg"
-                      height="24px"
-                    />
+                      src="https://688268d7.cdn.akinoncloud.com/static_omnishop/super715/assets/img/header-icons/user.svg"         
+                        height="24px"         />
                   </a>
                 </li>
               </a>
@@ -71,8 +70,8 @@
                   <img
                     loading="lazy"
                     class="icon-favorite-svg"
-                    src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/heart.svg"
-                    height="24px"
+                    src="https://688268d7.cdn.akinoncloud.com/static_omnishop/super715/assets/img/header-icons/heart.svg"                   
+                     height="24px"
                   />
                 </a>
               </li>
@@ -81,8 +80,7 @@
                   <img
                     loading="lazy"
                     class="icon-favorite-svg"
-                    src="https://akn-ss.b-cdn.net/static_omnishop/super522/assets/img/header-icons/bag.svg"
-                    height="24px"
+                     src="https://688268d7.cdn.akinoncloud.com/static_omnishop/super715/assets/img/header-icons/bag.svg"                    height="24px"
                   />
                 </a>
               </li>
@@ -97,14 +95,138 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      notificationText: "Siparişin 2-4 iş günü içerisinde kargoya verilecektir.",
+      notifications: [
+        "2000 TL ve üzeri siparişlerde ücretsiz kargo",
+        "Siparişin 1-3 iş günü içerisinde kargoya verilecektir.",
+        "3.500 TL ve üzeri alışverişinize 300 Worldpuan üstelik 8 taksit fırsatı"
+        
+      ],
+      currentNotificationIndex: 0,
+      slideIn: false,
+      isCartMenuOpen: false,
+    };
+  },
+  mounted() {
+    this.setupNotificationTimer();
+  },
+  methods: {
+    setupNotificationTimer() {
+      setInterval(() => {
+        this.showNextNotification();
+      }, 3000); 
+    },
+    showNextNotification() {
+      this.slideIn = false;
+      setTimeout(() => {
+        this.currentNotificationIndex = (this.currentNotificationIndex + 1) % this.notifications.length;
+        this.notificationText = this.notifications[this.currentNotificationIndex];
+        this.slideIn = true;
+      }, 500); 
+    },
+  },
 };
 </script>
+
+
 
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,600);
 
-* {
+body {
+  margin: 0;
+  padding: 0;
+}
+.menu-list-item a.menu-link[href="/indirim"] {
+  color: red;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white; 
+}
+.global-notification {
+  transition: opacity 0.5s ease-in-out;
+ 
+}
+
+
+.slide-in {
+  transform: translateY(0);
+}
+
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list-item {
+  margin-right: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-link:hover {
+  color: #007bff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: auto; 
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%; 
+  height: 100vh; 
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.icon-favorite-svg {
+  height: 24px;
+}
+
+
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;

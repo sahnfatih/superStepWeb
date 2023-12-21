@@ -53,7 +53,10 @@ h1, h2, h4, h5, h6, p {
     display: flex;
     align-items: center;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+  }
 .header-left {
     float: left;
     min-height: 1px;

@@ -1,13 +1,13 @@
 <template>
   <div>
       <Navbar />
-      <SezonunTrendleriVue />
       <ContainerVue />
+      <Container2Vue />
+      <SezonunTrendleriVue/>
+      <Container4Vue />
       <KoleksiyonlarVue />
       <FavoriModellerSliderVue />
-      <Container2Vue />
       <Container3Vue />
-      <Container4Vue />
       <FooterVue />
       <Footer2Vue />
       
