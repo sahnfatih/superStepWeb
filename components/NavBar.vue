@@ -56,7 +56,7 @@
               </li>
               <a href="/login">
                 <li class="menu-list-item">
-                  <a href="/login" class="menu-link">
+                  <a href="/login" class="menu-link" @click="goToLoginPage">
                     <img
                       loading="lazy"
                       class="icon-favorite-svg"
@@ -125,6 +125,9 @@ export default {
         this.notificationText = this.notifications[this.currentNotificationIndex];
         this.slideIn = true;
       }, 500); 
+    },
+    goToLoginPage() {
+      this.$router.push('/login');
     },
   },
 };
