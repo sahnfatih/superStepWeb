@@ -6,15 +6,15 @@
             <div>
               <a href="https://www.superstep.com.tr/mobil-uygulama">
                 <img loading="lazy"
-                  src="https://cdn-ss.akinon.net/cms/2022/11/04/ec8cd712-7618-4b2a-a2ad-2a61607d863a.jpg">
+                src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/07/26/5618a45c-f8f5-4727-91a0-bc32e470246c.jpg"                  >
               </a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://www.superstep.com.tr/outdoor-koleksiyonu/">
+              <a href="https://www.superstep.com.tr/superkids/">
                 <img loading="lazy"
-                  src="https://cdn-ss.akinon.net/cms/2022/11/16/917c0993-06d4-41bd-94da-be3975eb3d98.jpg">
+                src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/09/22/314dabaa-6cb9-4c66-be81-48d13f858100.jpg"                  >
               </a>
             </div>
           </div>

@@ -1,16 +1,16 @@
 <template>
     <div>
-        <Navbar />
+        <NavBar/>
         <loginVue />
         <Footer2Vue />
     </div>
 </template> 
 <script>
-import Navbar from '../components/navbar.vue';
 import Footer2Vue from '../components/Footer2.vue'
-import loginVue from '../components/login.vue';
+import NavBar from '~/components/NavBar.vue';
+import Login from '~/components/Login.vue';
 export default {
     name: "IndexPage",
-    components: { Navbar, Footer2Vue, loginVue }
+    components: { NavBar, Footer2Vue, Login }
 }
 </script>

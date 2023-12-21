@@ -1,7 +1,7 @@
 <template>
     <div class="analytics-sub-promotion-click">
-        <a href="https://www.superstep.com.tr/skechers/" class="hidden-xs">
-            <img loading="lazy" src="https://cdn-ss.akinon.net/cms/2022/11/16/31dc708b-0169-4683-91b6-950f3a536a6c.jpg">
+        <a href="https://www.superstep.com.tr/indirim/" class="hidden-xs">
+            <img loading="lazy" src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/12/21/f8193f7d-414f-4167-967b-d1a4fa0a0885.jpg">
         </a>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar />
+        <NavBar/>
         <SliderVue />
         <SezonunTrendleriVue />
         <ContainerVue />
@@ -17,7 +17,7 @@
     </div>
 </template> 
 <script>
-import Navbar from '../components/navbar.vue';
+import NavBar from '~/components/NavBar.vue';
 import SezonunTrendleriVue from '../components/SezonunTrendleri.vue';
 import ContainerVue from '../components/Container.vue';
 import KoleksiyonlarVue from '../components/Koleksiyonlar.vue'
@@ -30,9 +30,9 @@ import FavoriModellerSliderVue from '../components/FavoriModellerSlider.vue';
 import OneCikanlarSliderVue from '../components/OneCikanlarSlider.vue';
 import Container4Vue from '../components/Container4.vue'
 import GiyimKoleksiyonuSliderVue from '../components/GiyimKoleksiyonuSlider.vue';
-import loginVue from '../components/login.vue';
+import Login from '~/components/Login.vue';
 export default {
     name: "IndexPage",
-    components: { Navbar, SezonunTrendleriVue, ContainerVue, KoleksiyonlarVue, Container2Vue, FooterVue, SliderVue, Container3Vue, Footer2Vue, FavoriModellerSliderVue, OneCikanlarSliderVue, Container4Vue, GiyimKoleksiyonuSliderVue, loginVue }
+    components: { NavBar, SezonunTrendleriVue, ContainerVue, KoleksiyonlarVue, Container2Vue, FooterVue, SliderVue, Container3Vue, Footer2Vue, FavoriModellerSliderVue, OneCikanlarSliderVue, Container4Vue, GiyimKoleksiyonuSliderVue, Login }
 }
 </script>

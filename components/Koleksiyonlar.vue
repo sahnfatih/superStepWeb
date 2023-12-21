@@ -2,41 +2,41 @@
 
     <div class="cotainer-fuild">
         <div class="home-quadr">
-            <div class="colection">
-                <a href="">
-                    <img src="https://cdn-ss.akinon.net/cms/2022/11/16/90c34961-0566-40ce-a1b9-fbbeb2da2f2a.jpg" alt="">
+            <div class="row">
+                <a href="https://www.superstep.com.tr/vans/">
+                    <img src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/12/19/091fd0d0-f7ce-4321-9653-e0cd7cda8bba.jpg" alt="">
                 </a>
-                <h4>Çanta Koleksiyonu</h4>
-                <p>Nerede olursan ol seninle</p>
-                <a href=" " class="medium-button"> KEŞFET</a>
+                <h4>Vans</h4>
+                <p>Kuralları yok et, authentic yaşa</p>
+                <a href="https://www.superstep.com.tr/vans/" class="medium-button"> KEŞFET</a>
                 <i class="right-icon"></i>
             </div>
             <div class="colection">
-                <a href="">
-                    <img src="https://cdn-ss.akinon.net/cms/2022/11/16/0fb093bd-2c24-4868-96e9-aa2247433318.jpg "
+                <a href="https://www.superstep.com.tr/adidas/">
+                    <img src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/12/19/9f964693-7fb6-42c8-b1d4-6d438d91197c.jpg"
                         alt="">
                 </a>
-                <h4>Eşofman Koleksiyonu</h4>
-                <p>Rahat ve özgür hareketler</p>
-                <a href=" " class="medium-button">KEŞFET</a>
+                <h4>Adidas</h4>
+                <p>Kendi Gazelle'ini keşfet</p>
+                <a href="https://www.superstep.com.tr/adidas/" class="medium-button">KEŞFET</a>
                 <i class="right-icon"></i>
             </div>
             <div class="colection">
-                <a href="">
-                    <img src="https://cdn-ss.akinon.net/cms/2022/11/16/1bc7680d-fff7-4ce6-9ff8-215b292670cb.jpg" alt="">
+                <a href="https://www.superstep.com.tr/timberland/">
+                    <img src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/12/19/4bddb52e-547f-4446-872b-82a0bbf22546.jpg" alt="">
                 </a>
-                <h4>Şapka Koleksiyonu</h4>
-                <p>Tüm kombinlerin tamamlayıcısı</p>
-                <a href=" " class="medium-button"> KEŞFET</a>
+                <h4>Timberland</h4>
+                <p>Soğukta cesur kal!</p>
+                <a href="https://www.superstep.com.tr/timberland/" class="medium-button"> KEŞFET</a>
                 <i class="right-icon"></i>
             </div>
             <div class="colection">
-                <a href="">
-                    <img src="https://cdn-ss.akinon.net/cms/2022/11/16/686f4b5f-3069-4144-8435-f04f31896031.jpg" alt="">
+                <a href="https://www.superstep.com.tr/nike/">
+                    <img src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/12/19/f474299e-a777-482f-b7ca-0650e5cd82a0.jpg" alt="">
                 </a>
-                <h4>Sweatshirt Koleksiyonu</h4>
-                <p>Sezonun cool görünümü</p>
-                <a href=" " class="medium-button"> KEŞFET</a>
+                <h4>Nike</h4>
+                <p>Eşsiz adımlar atmanın keyfini çıkar</p>
+                <a href="https://www.superstep.com.tr/nike/" class="medium-button"> KEŞFET</a>
                 <i class="right-icon"></i>
             </div>
         </div>
@@ -47,6 +47,38 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap');
+.container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .home-quadr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .collection {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .collection img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 767px) {
+    .home-quadr {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .collection {
+      margin: 10px 0;
+    }
+  }
+
 
 * {
     margin: 0;
