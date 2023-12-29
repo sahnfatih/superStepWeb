@@ -1,7 +1,7 @@
 <template>
     <div class="analytics-sub-promotion-click">
         <a href="https://www.superstep.com.tr/yilbasi-hediye-onerileri/" class="hidden-xs">
-            <img loading="lazy"       src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/12/14/63a9ae98-281f-4dad-9b0d-5b39b4dff92c.jpg" 
+            <img loading="lazy"      src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/12/22/afcfac74-e1c2-4ed5-a984-873ba38b0ef0.jpg" 
             >
         </a>
     </div>

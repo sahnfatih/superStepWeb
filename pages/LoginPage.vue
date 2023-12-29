@@ -6,7 +6,7 @@
     </div>
 </template> 
 <script>
-import Footer2Vue from '../components/Footer2.vue'
+import Footer2Vue from '~/components/Footer2.vue'
 import NavBar from '~/components/NavBar.vue';
 import Login from '~/components/Login.vue';
 export default {

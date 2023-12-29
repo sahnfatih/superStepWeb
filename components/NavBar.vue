@@ -8,7 +8,7 @@
         <div class="header-wrapper">
           <div class="header-left">
             <a href="/" class="logo">
-              <img
+              <button
                 loading="lazy"
                 src="https://akn-ss.a-cdn.akinoncloud.com/cms/2023/10/31/137ac835-153e-4420-93a0-23b04851c260.svg"
                 alt="Super Step"
@@ -54,9 +54,9 @@
                   />
                 </a>
               </li>
-              <a href="/login">
+              <a >
                 <li class="menu-list-item">
-                  <a href="/login" class="menu-link" @click="goToLoginPage">
+                  <a @click="goToLoginPage" class="menu-link">
                     <img
                       loading="lazy"
                       class="icon-favorite-svg"
@@ -127,7 +127,7 @@ export default {
       }, 500); 
     },
     goToLoginPage() {
-      this.$router.push('/login');
+      this.$router.push('/LoginPage');
     },
   },
 };
